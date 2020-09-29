@@ -1,0 +1,28 @@
+header {
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+    position: relative ;
+    margin-top: -5%;
+    font-family: 'Alex Brush', cursive
+}
+nav{
+    position: relative;
+    font-size: 30px;
+    margin-top: -10%;
+   
+}
+
+article{
+    
+    text-align: center;
+    font-size: 25;
+    position: relative;
+    font-family: 'Alex Brush', cursive
+
+}
+
+figure{
+    margin-top: -11%;
+    margin-left: -5%;
+}
