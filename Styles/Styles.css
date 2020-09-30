@@ -1,0 +1,40 @@
+header {
+    font-size: 50px;
+    text-align: center;
+    position: relative ;
+    margin-top: -5%;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+nav{
+    position: relative;
+    font-size: 30px;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+section
+{
+    text-align: center;
+}
+
+h3
+{
+    margin-left: 70%;
+    margin-top: -1%;
+  
+}
+
+div 
+{
+    margin-left: -70%;
+}
+
+p
+{
+    font-size: 24px;
+    max-width: 1000px;
+    min-width: 500px;
+    height: 150px;
+    margin-left: 15%;
+}
