@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 1000px;
+    width: 1000px;
+    outline: 2px solid silver;
+    flex
+}
