@@ -2,8 +2,24 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 1000px;
-    width: 1000px;
-    outline: 2px solid silver;
-    flex
+    height: 600px;
+    text-align: center;
+    font-style: italic;
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+}
+
+nav{
+        font-size: 30px;
+        text-indent: 20px;
+        vertical-align: super;
+        margin-top: -10%;
+}
+
+nav:hover{
+    font-size: 35px; 
 }

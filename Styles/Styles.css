@@ -38,3 +38,8 @@ p
     height: 150px;
     margin-left: 15%;
 }
+
+nav:hover{
+    font-size: 35px; 
+}
+
