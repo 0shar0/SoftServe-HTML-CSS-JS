@@ -7,8 +7,9 @@ header {
     margin-top: -20px;
 }
 nav{
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
+    display: inline;
    
 }
 
@@ -23,7 +24,7 @@ article{
 
 body{
     display: grid;
-    grid-template-columns:5% 1fr ;
+    grid-template-columns:10% 1fr ;
     grid-template-rows:15% 1fr;
     grid-gap: 10px;
     margin: 10px;
@@ -31,7 +32,7 @@ body{
     grid-template-areas: 
     "nav header"
     "arcitkle arcitkle";
-    background-image: url(C:/Users/User/furry-octo-rotary-phone/Images/0.jpg);
+    background-image: url(../Images/0.jpg);
     background-size: cover;
     
     
@@ -54,6 +55,44 @@ body{
      
 }
 
-nav:hover{
+/* nav:hover{ */
     font-size: 35px; 
+}
+
+ul {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    transition: all 1s ease;
+    
+    
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    float: right;
+    width: 35px;
+    height: 35px;
+    background: url(../Images/menu-icon.png);
+    margin-top: 20px;
+}
+
+
+#menu-button{
+    display: none ;
+}
+
+#menu-button:checked ~ ul{
+    visibility: visible;
+    opacity: 1;
 }
