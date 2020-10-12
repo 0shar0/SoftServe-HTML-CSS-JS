@@ -1,0 +1,213 @@
+<html>
+
+<style>
+    #calc{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-gap: 4px;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        max-width: 360px;
+        background: linear-gradient(#c8c9ca,black);
+        height: 400px;
+    }
+
+    /* #button{
+        display: flex;
+        border-radius: 20px;
+    } */
+
+    #result {
+        grid-column: 1/6;
+        grid-row: 1/1;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #clean{
+        grid-row: 2/2;
+        grid-column: 1/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,red)
+    }
+
+    #back{
+        grid-column: 3/5;
+        grid-row: 2/2;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+
+    #equal{
+        grid-row: 6/8;
+        grid-column: 4/4;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,silver)
+    }
+    #add{
+        grid-column: 1/1;
+        grid-row: 3/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #sub{
+        grid-column:2/2 ;
+        grid-row: 3/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #multi{
+        grid-row: 3/3;
+        grid-column: 3/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #divi{
+        grid-row: 3/3;
+        grid-column: 4/4;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #one{
+        grid-row: 6/6;
+        grid-column: 1/1;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #two{
+        grid-row: 6/6;
+        grid-column: 2/2;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #three{
+        grid-row: 6/6;
+        grid-column: 3/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+        /* background-color: aqua; */
+    }
+    #four{
+        grid-row:5/5 ;
+        grid-column:1/1; 
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+
+    }
+    #five{
+        grid-row:5/5 ;
+        grid-column: 2/2;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+
+    }
+    #six{
+        grid-row:5/5 ;
+        grid-column: 3/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+
+    }
+    #seven{
+        grid-row:4/4 ;
+        grid-column:1/1; 
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+
+    }
+    #eight{
+        grid-row:4/4 ;
+        grid-column: 2/2;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+
+    }
+    #nine{
+        grid-row:4/4 ;
+        grid-column:3/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua )
+
+    }
+    #zero{
+        grid-row: 7/7;
+        grid-column: 1/3;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #Scoba{
+        grid-row: 4/4;
+        grid-column: 4/4;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #scobka{
+        grid-row: 5/5;
+        grid-column: 4/4;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    #dot{
+        grid-row: 7/7;
+        grid-column:3/3 ;
+        border-radius: 20px;
+        background-color: aqua;
+        background: radial-gradient(white,aqua)
+    }
+    /* .button{
+        background-color: aqua;
+        border-color: aqua; */
+    }
+</style>
+
+<body>
+    <form id="calc">
+        <input type="text" name="result" id="result" readonly>
+        <input type="button" name="clean" value="c" id="clean">
+        <input type="button" name="equality" value="=" id="equal">
+        <input type="button" name="addition" value="+" id="add">
+        <input type="button" name="subtraction" value="-" id="sub">
+        <input type="button" name="multiplication" value="&times;" id="multi">
+        <input type="button" name="division" value="&divide" id="divi">
+        <input type="button" name="one" value="1" id="one">
+        <input type="button" name="two" value="2" id="two">
+        <input type="button" name="three" value="3" id="three">
+        <input type="button" name="four" value="4" id="four">
+        <input type="button" name="five" value="5" id="five">
+        <input type="button" name="six" value="6" id="six">
+        <input type="button" name="seven" value="7" id="seven">
+        <input type="button" name="eight" value="8" id="eight">
+        <input type="button" name="nine" value="9" id="nine">
+        <input type="button" name="zero" value="0" id="zero">
+        <input type="button" name="Scoba" value="(" id="Scoba">
+        <input type="button" name="scobka" value=")" id="scobka">
+        <input type="button" name="dot" value="." id="dot">
+        <input type="button" name="back" value="&larr;" id="back">
+    </form>
+
+</body>
+
+    <script src="../calc/calc2.js"></script>
+</html>
