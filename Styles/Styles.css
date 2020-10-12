@@ -6,7 +6,7 @@ header {
     margin-top: -30px;
 }
 nav{
-    font-size: 30px;
+    font-size:;
     text-align: center;
    
 }
@@ -16,13 +16,13 @@ article{
     font-size: 25px;
     font-family: 'Alex Brush', cursive;
     text-align: center;
-    margin-top: -20px;
+    margin-top: 20px;
 
 }
 
 body{
     display: grid;
-    grid-template-columns:5% 1fr 1fr;
+    grid-template-columns:10% 1fr 1fr;
     grid-template-rows:15% 1fr 1fr;
     grid-gap: 10px;
     margin: 10px;
@@ -30,7 +30,8 @@ body{
     grid-template-areas: 
     "nav header header"
     "nav sec description"
-    "nav rating price" ;   
+    "nav rating price";
+    background-color: silver;
 }
 
 #pnav{
@@ -76,26 +77,78 @@ body{
     /* grid-column: 3/3; */
     /* grid-row: 3/3; */
     text-align: center;
-    margin-top: -30px;
-   
+    margin-top: -15px;
 }
-
-nav:hover{
+   
+.menu-icon:hover{ 
     font-size: 35px; 
 }
 
-figcaption{}
+
+ul {
+    visibility: hidden;
+    display: block;
+    /* position: absolute; */
+    right: 20px;
+    top: 60px;
+    /* background: whitesmoke; */
+    border-radius: 4px;
+    /* border: 5px solid darkgoldenrod; */
+    padding: 20px;
+    opacity: 0;
+    transition: all 1s ease;
+    
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    float: right;
+    width: 35px;
+    height: 35px;
+    background: url(../Images/menu-icon.png);
+    margin-top: 20px;
+}
+
+
+#menu-button{
+    display: none ;
+}
+
+#menu-button:checked ~ ul{
+    visibility: visible;
+    opacity: 1;
+}
 
 @media screen and (max-width:600px){
     body{
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 1fr 1fr;
-        grid-template-areas: "header" "nav" "sec" "description" "rating" "price";
+        grid-template-rows: 100px 200px 1fr 1fr 100px;
+        grid-template-areas: "header" "nav" "sec" "description" "price";
         height: 150vh;
         text-align: center;
     }
     #Description{
         margin-left: 40px;
-    
-     }
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        background: url(../Images/menu-icon.png);
+        margin-top: 20px;
+       margin-right: 275px;
+    }
+
+
 }

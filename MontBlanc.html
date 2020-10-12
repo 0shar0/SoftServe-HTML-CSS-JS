@@ -1,40 +1,63 @@
 <!doctype html>
 <html lang=en>
+
 <head>
     <meta charset="UTF-8">
     <title>Mont Blanc</title>
     <link rel="stylesheet" href="Styles/Styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Alex+Brush&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-    <header><h1>Mont Blanc</h1></header>
-    <nav><h1>&Congruent;</h1></nav>
+    <header id="pheader"><h1>Mont Blanc</h1></header>
+
+    <nav id="pnav">
+        <input type="checkbox" id="menu-button">
+        <label for="menu-button" class="menu-icon"></label>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Ourboats2.html">Our Boats</a></a></li>
+            <li><a href="Info.html">About Us</a></a></li>
+        </ul>
+    </nav>
     
-    <section>
-    <img src="Images/MontBlanc.jpg" alt="MontBlanc"width="1280" height="720">
+    <section id="psec">
+        <figure>
+            <img src="Images/MontBlanc.jpg" alt="MontBlanc" width="500" height="300">
+        </figure>
+        
+                <div class="rating">
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5" title="Оценка «5»"></label>	
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Оценка «4»"></label>    
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Оценка «3»"></label>  
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Оценка «2»"></label>    
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1" title="Оценка «1»"></label>
+                </div> 
+         
+
+    </section>
+
+    <article id="Description">
+        <p><b>Description</b></p>
+    </article>
     
 
-    <div class="rating-area">
-        <input type="radio" id="star-5" name="rating" value="5">
-        <label for="star-5" title="Оценка «5»"></label>	
-        <input type="radio" id="star-4" name="rating" value="4">
-        <label for="star-4" title="Оценка «4»"></label>    
-        <input type="radio" id="star-3" name="rating" value="3">
-        <label for="star-3" title="Оценка «3»"></label>  
-        <input type="radio" id="star-2" name="rating" value="2">
-        <label for="star-2" title="Оценка «2»"></label>    
-        <input type="radio" id="star-1" name="rating" value="1">
-        <label for="star-1" title="Оценка «1»"></label>
+    <div id="Price">
+        <h3 id="Price">Price</h3>
     </div>
 
-    <h3>Price</h3>
-
-    <p><b>Description</b></p>
-
     
-</section>
+    
+
+    <!-- <p id="Description"><b>Description</b></p> -->
+
+    <!-- <h3 id="Price">Price</h3> -->
+
 
 </body>
