@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tip Calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    </head>
+
+    <body style="display: grid; grid-template-columns: 1fr 1fr; width: 600px;">
+        <div class="container1" style="border-width: 1px; border-style: solid; padding: 10px; width: 300px; justify-content: center; text-align: center;">
+            
+            <p id="Bill">Bill</p>
+            <input type="text" name="Bill" value="0.00" style="text-align: center;">
+            
+            
+
+            <p id="Tip">Tip</p>
+            <input type="button" name="minustip" value="-">
+            <input type="text" name="Tip" value="10%" style="text-align: center;">
+            <input type="button" name="addtip" value="+">
+
+            <p id="Num">Number of people</p>
+            <input type="button" name="minusnum" value="-" id="b-">
+            <input type="text" name="Num" value="1" style="text-align: center;">
+            <input type="button" name="plusnum" value="+" id="b+">
+
+
+        </div>
+
+        <div class="container2" style="display: grid; grid-template-rows:1fr 1fr 1fr 1fr; width: 300; height: 250px; border-width: 1px; border-style: solid; padding: 10px; width: 300px; justify-content: center; text-align: center;">
+
+          <div>Tip per person</div>
+
+          <div>0.00</div>
+
+          <div>Total per person</div>
+
+          <div>0.00</div>
+
+        </div>
+    </body>
+
+    <script>
+        calc.plusnum.addEventListener('click', function() {
+        calc.Num.value += '1';
+        }, false)
+
+        calc.minusnum.addEventListener('click', function() {
+        calc.Num.value += '2';
+        }, false)
+
+    </script>
+
+</html>
